@@ -13,8 +13,8 @@
     text-align: center;
     margin: 50px 0;
 }
-/* login ボタンのスタイル */
-.login__button {
+
+.login__button, .register__button {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -27,7 +27,13 @@
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.login__button:hover {
+.login__button:hover, .register__button:hover{
     background-color: #a58f7d;
     color: white;
+}
+
+.form__error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
 }
