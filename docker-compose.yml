@@ -3,7 +3,6 @@ version: "3.8"
 services:
   nginx:
     image: nginx:1.21.1
-    platform: linux/amd64
     ports:
       - "80:80"
     volumes:
@@ -14,13 +13,11 @@ services:
 
   php:
     build: ./docker/php
-    platform: linux/amd64
     volumes:
       - ./src:/var/www/
 
   mysql:
     image: mysql:8.0.26
-    platform: linux/amd64
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel_db
@@ -33,7 +30,6 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    platform: linux/amd64
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=mysql
