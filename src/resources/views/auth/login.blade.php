@@ -20,7 +20,7 @@
                 <h3>メールアドレス</h3>
             </div>
             <div class="form__group-input">
-                <input type="text" name="email" placeholder="例: test@example.com">
+                <input type="text" name="email" placeholder="例: test@example.com" value="{{ old('email')}}">
             </div>
             <div class="form__group-error">
                 @error('email')

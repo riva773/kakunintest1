@@ -1,23 +1,111 @@
 .form {
+    max-width: 900px;
     margin: 0 auto;
-    width: 972px;
-    height: 606px;
+    font-size: 14px;
+    color: #5f4e41;
+}
+
+.form__header {
+    text-align: center;
+    margin: 50px 0;
+    color: #5f4e41;
 }
 
 .form__group {
-    max-width: 100%;
-    max-height: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 0 2px;
-    margin-bottom: 20px;
-    font-size: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form__group>div:first-child {
+    width: 180px;
+    text-align: left;
+    font-weight: bold;
+    padding-right: 20px;
 }
 
 .required {
-    color: #FF9494;
+    color: #c44;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f5f2;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+.form__name-input,
+.form__phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.form__name-input input,
+.form__phone-input input {
+    flex: 1;
+}
+
+.form__gender-input {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.form__contact-input select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%238B7969' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px 7px;
 }
 
 .form__contact-button {
     text-align: center;
+    margin-top: 30px;
+}
+
+.form__contact-button button {
+    background-color: #8b7b6d;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form__contact-button button:hover {
+    background-color: #5f4e41;
+}
+
+.contact__alert--danger {
+    background-color: #ffe9e6;
+    border-left: 5px solid #f08a8a;
+    color: #c44;
+    padding: 10px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #c2b9b1;
+    font-size: 13px;
 }

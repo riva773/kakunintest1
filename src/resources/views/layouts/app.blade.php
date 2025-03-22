@@ -11,11 +11,23 @@
 
 <body>
     <header class="header">
-        <h1>FashionablyLate</h1>
-        @yield('header')
+        <div class="header__title">
+            <h1>FashionablyLate</h1>
+        </div>
+        <div class="header__right">
+            @yield('header')
+            @auth
+            <form method="POST" action="{{ route('logout') }}" class="logout-form">
+                @csrf
+                <button type="submit" class="logout-button">logout</button>
+            </form>
+            @endauth
+        </div>
     </header>
+
     <main>
         @yield('content')
     </main>
+    @yield('js')
 </body>
 </html>

@@ -1,7 +1,28 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4eee9;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 0;
+    padding-top: 0;
+} */
+
 .header {
     text-align: center;
     border-bottom: 1px solid #E0DFDE;
     position: relative;
+    background-color: #fff;
 }
 
 .header h1 {
@@ -36,4 +57,27 @@
     color: red;
     font-size: 14px;
     margin-top: 4px;
+}
+
+.logout-form {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.logout-button {
+    background-color: transparent;
+    color: #a58f7d;
+    border: 1px solid #a58f7d;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #a58f7d;
+    color: white;
 }

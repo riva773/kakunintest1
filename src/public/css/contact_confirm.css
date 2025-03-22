@@ -1,11 +1,9 @@
-/* 中央寄せ用フォーム全体 */
 .form {
     width: 800px;
     margin: 50px auto;
     color: #5f5f5f;
 }
 
-/* テーブルの見た目 */
 .form table {
     width: 100%;
     border-collapse: collapse;
@@ -13,7 +11,12 @@
     font-size: 16px;
 }
 
-/* 左側：ラベル（見出し） */
+.form__header {
+    text-align: center;
+    margin: 50px 0;
+    color: #5f4e41;
+}
+
 .form th {
     background-color: #b4a08a;
     color: #fff;
@@ -24,7 +27,6 @@
     border: 1px solid #ddd;
 }
 
-/* 右側：入力値表示 */
 .form td {
     background-color: #fff;
     padding: 15px 20px;
@@ -33,13 +35,11 @@
     line-height: 1.6;
 }
 
-/* ボタン配置用 */
 .form__button-wrapper {
     text-align: center;
     margin-top: 30px;
 }
 
-/* 送信ボタン */
 .form__button-submit {
     background-color: #b4a08a;
     color: #fff;
@@ -55,7 +55,6 @@
     background-color: #a08874;
 }
 
-/* 修正リンクをボタン風に */
 .form__button-wrapper a {
     color: #b4a08a;
     text-decoration: none;

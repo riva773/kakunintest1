@@ -1,4 +1,9 @@
-/* フォーム全体のコンテナ */
+body {
+    background-color: #f2ece5;
+    margin: 0;
+    padding: 0;
+}
+
 .register__form-content {
     max-width: 500px;
     margin: 80px auto;
@@ -8,7 +13,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Registerの見出し */
 .register__form-heading h2 {
     font-size: 28px;
     text-align: center;
@@ -17,19 +21,16 @@
     font-weight: bold;
 }
 
-/* 各フォームグループのマージン */
 .form__group {
     margin-bottom: 25px;
 }
 
-/* タイトル（ラベル）のスタイル */
 .form__group-title h3 {
     font-size: 16px;
     margin-bottom: 6px;
     color: #5c443b;
 }
 
-/* テキスト入力欄 */
 .form__group-input input {
     width: 100%;
     padding: 12px;
@@ -39,10 +40,9 @@
     background-color: #f3f3f3;
 }
 
-/* 登録ボタン */
 button[type="submit"] {
     display: block;
-    width: 100%;
+    width: 30%;
     padding: 12px;
     background-color: #7b6653;
     color: #fff;
@@ -51,6 +51,7 @@ button[type="submit"] {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 0 auto;
 }
 
 button[type="submit"]:hover {
