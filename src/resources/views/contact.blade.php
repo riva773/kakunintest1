@@ -19,7 +19,9 @@
         </div>
     @endif
 </div>
-
+<div class="form__header">
+    <h2>Contact</h2>
+</div>
 <div class="form">
     <form action="/confirm" method="post">
         @csrf

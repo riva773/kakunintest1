@@ -12,10 +12,8 @@
 <body>
     <header class="header">
         <h1>FashionablyLate</h1>
+        @yield('header')
     </header>
-    <div class="form__header">
-        <h2>Contact</h2>
-    </div>
     <main>
         @yield('content')
     </main>

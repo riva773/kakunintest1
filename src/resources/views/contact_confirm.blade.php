@@ -7,7 +7,9 @@
 
 
 @section('content')
-    
+    <div class="form__header">
+        <h2>Contact</h2>
+    </div>
     <form action="/thanks" method="post" class="form">
         @csrf
         <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
