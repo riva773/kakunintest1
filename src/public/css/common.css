@@ -3,7 +3,19 @@
     border-bottom: 1px solid #E0DFDE;
 }
 
+<<<<<<< HEAD
 .header h1{
     color: #8B7969;
 }
 
+=======
+.header h1 {
+    color: #8B7969;
+}
+
+
+.form__header {
+    text-align: center;
+    margin: 50px 0;
+}
+>>>>>>> c5d9d0f (フォーム確認機能の実装(デザイン以外))

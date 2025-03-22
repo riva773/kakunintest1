@@ -1,0 +1,70 @@
+/* 中央寄せ用フォーム全体 */
+.form {
+    width: 800px;
+    margin: 50px auto;
+    color: #5f5f5f;
+}
+
+/* テーブルの見た目 */
+.form table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* 左側：ラベル（見出し） */
+.form th {
+    background-color: #b4a08a;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: left;
+    width: 30%;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+/* 右側：入力値表示 */
+.form td {
+    background-color: #fff;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+/* ボタン配置用 */
+.form__button-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* 送信ボタン */
+.form__button-submit {
+    background-color: #b4a08a;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+}
+
+.form__button-submit:hover {
+    background-color: #a08874;
+}
+
+/* 修正リンクをボタン風に */
+.form__button-wrapper a {
+    color: #b4a08a;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+}
+
+.form__button-wrapper a:hover {
+    border-color: #b4a08a;
+}
