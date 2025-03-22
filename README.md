@@ -12,15 +12,15 @@
 
 ## 使用技術(実行環境)
 
--   PHP: 7.4.9
--   Laravel: 8.83.8
--   mysql:8.0.26
--   nginx:1.21.1
+- PHP: 7.4.9
+- Laravel: 8.83.8
+- mysql:8.0.26
+- nginx:1.21.1
 
 ## ER 図
 
-![ER図](../db_diagram.png)
+![ER図](./db_diagram.png)
 
 ## URL
 
--   開発環境：http://localhost/
+- 開発環境：http://localhost/
