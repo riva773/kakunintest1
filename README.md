@@ -19,7 +19,7 @@
 
 ## ER 図
 
-![ER図](./db_diagram.png)
+![ER図](../db_diagram.png)
 
 ## URL
 
