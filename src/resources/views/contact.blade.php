@@ -39,9 +39,9 @@
                 <span class="required">※</span>
             </div>
             <div class="form__gender-input">
-                <input type="radio" name="gender" value="男" {{ old('gender','男') === '男' ? 'checked' : '' }}>男
-                <input type="radio" name="gender" value="女" {{ old('gender') === '女' ? 'checked' : '' }}>女
-                <input type="radio" name="gender" value="その他" {{ old('gender') === 'その他' ? 'checked' : '' }}>その他
+                <input type="radio" name="gender" value="0" {{ old('gender','0') === '0' ? 'checked' : '' }}>男
+                <input type="radio" name="gender" value="1" {{ old('gender') === '1' ? 'checked' : '' }}>女
+                <input type="radio" name="gender" value="2" {{ old('gender') === '2' ? 'checked' : '' }}>その他
             </div>
         </div>
         <div class="form__email form__group">

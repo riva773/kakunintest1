@@ -4,14 +4,6 @@
     height: 606px;
 }
 
-<<<<<<< HEAD
-.form__header {
-    text-align: center;
-    margin: 50px 0;
-}
-
-=======
->>>>>>> c5d9d0f (フォーム確認機能の実装(デザイン以外))
 .form__group {
     max-width: 100%;
     max-height: 100%;
@@ -22,21 +14,10 @@
     font-size: 20px;
 }
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> c5d9d0f (フォーム確認機能の実装(デザイン以外))
 .required {
     color: #FF9494;
 }
 
 .form__contact-button {
     text-align: center;
-<<<<<<< HEAD
 }
-=======
-}
-
-
->>>>>>> c5d9d0f (フォーム確認機能の実装(デザイン以外))

@@ -10,6 +10,17 @@
     
     <form action="/thanks" method="post" class="form">
         @csrf
+        <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
+        <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
+        <input type="hidden" name="gender" value="{{ $contact['gender'] }}">
+        <input type="hidden" name="email" value="{{ $contact['email'] }}">
+        <input type="hidden" name="phone1" value="{{ $contact['phone1'] }}">
+        <input type="hidden" name="phone2" value="{{ $contact['phone2'] }}">
+        <input type="hidden" name="phone3" value="{{ $contact['phone3'] }}">
+        <input type="hidden" name="address" value="{{ $contact['address'] }}">
+        <input type="hidden" name="building" value="{{ $contact['building'] }}">
+        <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}">
+        <input type="hidden" name="detail" value="{{ $contact['detail'] }}">
         <table>
             <tr>
                 <th>名前</th>
@@ -17,7 +28,15 @@
             </tr>
             <tr>
                 <th>性別</th>
-                <td>{{ $contact['gender'] }}</td>
+                <td>
+                    @if ($contact['gender'] == 0)
+                        男
+                    @elseif ($contact['gender'] == 1)
+                        女
+                    @else
+                        その他
+                    @endif
+                </td>
             </tr>
             <tr>
                 <th>メールアドレス</th>
