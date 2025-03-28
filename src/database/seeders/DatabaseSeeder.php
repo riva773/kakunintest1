@@ -12,5 +12,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CategorySeeder::class
         ]);
+
+        Contact::factory()->count(35)->create();
     }
 }

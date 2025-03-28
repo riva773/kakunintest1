@@ -9,6 +9,8 @@
 3. php コンテナ内で composer install
 4. cp .env.example .env で.env ファイルを作成
 5. php artisan key:generate でアプリを使用できるようにする
+6. php artisan migrate:fresh でマイグレーションを通す
+7. php artisan db:seed で、DatabaseSeeder.php のテスト用データを投入する。
 
 ## 使用技術(実行環境)
 
