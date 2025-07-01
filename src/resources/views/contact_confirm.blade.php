@@ -66,8 +66,23 @@
             </tr>
         </table>
         <div class="form__button-wrapper">
-            <button type="submit" class="form__button-submit">送信</button>
-            <a href="#">修正</a>
-        </div>
+            <button type="submit" class="form__button-submit">送信</button>    
+        </div>  
     </form>
+    <form action="{{ route('contact.back') }}" method= "post">
+        @csrf
+            <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
+            <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
+            <input type="hidden" name="gender" value="{{ $contact['gender'] }}">
+            <input type="hidden" name="email" value="{{ $contact['email'] }}">
+            <input type="hidden" name="phone1" value="{{ $contact['phone1'] }}">
+            <input type="hidden" name="phone2" value="{{ $contact['phone2'] }}">
+            <input type="hidden" name="phone3" value="{{ $contact['phone3'] }}">
+            <input type="hidden" name="address" value="{{ $contact['address'] }}">
+            <input type="hidden" name="building" value="{{ $contact['building'] }}">
+            <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}">
+            <input type="hidden" name="detail" value="{{ $contact['detail'] }}">
+            <button type="submit">修正</button>
+        </form>
+    
 @endsection

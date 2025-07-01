@@ -10,7 +10,9 @@ class UserSeeder extends Seeder
 {
     public function run()
     {
-        User::create([
+        User::firstOrCreate(
+        ['email' =>'test@example.com'],
+        [
             'name' =>'Test User',
             'email' => 'test@example.com',
             'password' => Hash::make('password123'),

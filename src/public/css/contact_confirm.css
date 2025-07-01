@@ -67,3 +67,7 @@
 .form__button-wrapper a:hover {
     border-color: #b4a08a;
 }
+
+.form__button-wrapper button {
+    display: inline-block;
+}

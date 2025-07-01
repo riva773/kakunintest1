@@ -27,4 +27,9 @@ class ContactController extends Controller
         Contact::create($contact);
         return view('thanks');
     }
+
+    public function back(Request $request){
+        $request->flash();
+        return redirect()->route('contact.create');
+    }
 }
