@@ -74,16 +74,14 @@
                     <div class="modal__overlay"></div>
                     <div class="modal__content">
                         <button class="modal__close" data-id="{{ $contact->id }}">&times;</button>
-
-                        <h3>お問い合わせ詳細</h3>
-                        <p><strong>名前：</strong>{{ $contact->last_name }} {{ $contact->first_name }}</p>
-                        <p><strong>性別：</strong>{{ $contact->gender === 1 ? '男性' : ($contact->gender === 2 ? '女性' : 'その他') }}</p>
-                        <p><strong>メール：</strong>{{ $contact->email }}</p>
-                        <p><strong>電話番号：</strong>{{ $contact->tel }}</p>
-                        <p><strong>住所：</strong>{{ $contact->address }} {{ $contact->building }}</p>
-                        <p><strong>お問い合わせの種類：</strong>{{ $contact->category->content }}</p>
-                        <p><strong>内容：</strong>{{ $contact->detail }}</p>
-
+                        <div class="modal__row"><span class="modal__label">お名前</span><span class="modal__value">{{ $contact->last_name }} {{ $contact->first_name }}</span></div>
+                        <div class="modal__row"><span class="modal__label">性別</span><span class="modal__value">{{ $contact->gender === 1 ? '男性' : ($contact->gender === 2 ? '女性' : 'その他') }}</span></div>
+                        <div class="modal__row"><span class="modal__label">メールアドレス</span><span class="modal__value">{{ $contact->email }}</span></div>
+                        <div class="modal__row"><span class="modal__label">電話番号</span><span class="modal__value">{{ $contact->tel }}</span></div>
+                        <div class="modal__row"><span class="modal__label">住所</span><span class="modal__value">{{ $contact->address }}</span></div>
+                        <div class="modal__row"><span class="modal__label">建物名</span><span class="modal__value">{{ $contact->building }}</span></div>
+                        <div class="modal__row"><span class="modal__label">お問い合わせの種類</span><span class="modal__value">{{ $contact->category->content }}</span></div>
+                        <div class="modal__row"><span class="modal__label">お問い合わせ内容</span><span class="modal__value">{{ $contact->detail }}</span></div>
                         <form method="POST" action="{{ route('admin.delete', $contact->id) }}">
                             @csrf
                             @method('DELETE')

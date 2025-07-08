@@ -10,6 +10,7 @@ body {
     font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
+    color: #8B7969;
 }
 
 
@@ -81,6 +82,10 @@ body {
     font-size: 14px;
 }
 
+.search__content-table{
+    color: #8B7969;
+}
+
 .search__content-table th {
     background-color: #8b7b6d;
     color: #fff;
@@ -95,6 +100,12 @@ body {
     background-color: #f8f5f2;
     text-decoration: none;
     font-size: 13px;
+}
+
+.detail-button {
+    border: 1px solid #8B7969;
+    color: #8B7969;
+    background-color: transparent;
 }
 
 .pagination-wrapper {
@@ -160,9 +171,9 @@ body {
 .modal__content {
     background: #fff;
     width: 90%;
-    max-width: 500px;
+    max-width: 550px;
     margin: 100px auto;
-    padding: 20px;
+    padding: 40px 30px;
     position: relative;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -186,4 +197,22 @@ body {
     border-radius: 4px;
     margin-top: 15px;
     cursor: pointer;
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+.modal__row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.modal__label {
+    font-weight: bold;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.modal__value {
+    flex-grow: 1;
+    word-break: break-word;
 }

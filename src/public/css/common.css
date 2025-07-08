@@ -13,6 +13,9 @@ h1 {
     margin: 0;
 }
 
+.header__title {
+    padding: 20px;
+}
 
 .form__header {
     text-align: center;
